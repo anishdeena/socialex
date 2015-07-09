@@ -10,7 +10,7 @@ class Topic_controller
   end
 
   def followTopic(user_id, topic_id)
-    result = Topic.follow(user_id, topic_id)
+    result = Follow.followTopic(user_id,topic_id)
   end
 
   def popularTopic()
